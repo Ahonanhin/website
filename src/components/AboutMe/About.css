@@ -87,7 +87,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    width: 20%;
+    width: 80%;
 }
 
 .me_button a{
@@ -103,7 +103,7 @@
     color: white;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1080px){
     .about{
         padding: 0.5rem;
         height: max-content;
