@@ -66,12 +66,16 @@
   }
   
   .mobile-nav.open {
-    display: n;
+    display: flex;
   }
-
-  .navbar_more{
+  
+  .menu-icon {
     display: none;
   }
+/* 
+  .navbar_more{
+    display: none;
+  } */
   /* Responsive */
   @media screen and (max-width: 768px) {
     .navbar_links {
