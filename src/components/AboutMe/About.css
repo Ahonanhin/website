@@ -1,0 +1,137 @@
+.about{
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.9rem;
+    height: 100vh;
+    min-height: max-content;
+}
+
+.about h1{
+    border-bottom: 4px solid blue;
+    border-radius: 10%;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.about p{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    padding-bottom: 2rem;
+}
+
+.about_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.me, .skills{
+    width: 50%;
+    margin: 0 2rem;
+    
+}
+
+.me_header, .skills_header{
+    font-weight:bold;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.me p, .skills p{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    text-align: left;
+    padding-bottom: 0.3rem;
+}
+
+.skills_content{
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills_content li{
+    padding: 0.4rem 1rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    background: rgba(153,153,153,.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: blue;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+}
+
+.me_button{
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: white;
+    color: blue;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 20%;
+}
+
+.me_button a{
+    text-decoration: none;
+    color: blue;
+}
+
+.me_button:hover{
+    background-color: blue;
+    color: white;
+}
+.me_button:hover a{
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .about{
+        padding: 0.5rem;
+        height: max-content;
+    }
+
+    .about h1{
+        font-size: 2rem;
+    }
+
+    .about p{
+        font-size: 1.2rem;
+    }
+
+    .about_content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .me, .skills{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .me_header, .skills_header{
+        text-align: center;
+    }
+
+    .me_button{
+        width: 50%;
+    }
+}

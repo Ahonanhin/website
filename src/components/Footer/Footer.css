@@ -1,0 +1,20 @@
+.footer{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Outfit","sans-serif";
+}
+
+.footer a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.footer_text a{
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 0rem;
+}

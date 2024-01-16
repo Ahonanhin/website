@@ -1,0 +1,123 @@
+.projects{
+    background-color: #B3DEC1;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    color: black;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.projects_content{
+    margin: 1rem;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects_desc p{
+    font-size: 1.5rem;
+    font-family: "Outfit", sans-serif;
+    color: black;
+    text-align: center;
+    margin: 1rem;
+}
+
+.project {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin: 1rem;
+}
+
+.project_header, .project_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.project_header {
+    background: #00AFB5;
+    color: white;
+    font-size: 2em;
+}
+
+.project_content {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.project:hover .project_header {
+    transform: translateY(-100%);
+}
+
+.project:hover .project_content {
+    opacity: 1;
+}
+
+.project_content p{
+    font-size: 1.5rem;
+    font-family: "Outfit", sans-serif;
+    color: black;
+    text-align: center;
+    margin: 1rem;
+}
+
+.projects_header h1{
+    border-bottom: 4px solid #00AFB5;
+    border-radius: 10%;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.project_link a{
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;
+    font-family: "Outfit", sans-serif;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .projects_header h1{
+        font-size: 2rem;
+    }
+
+    .projects_desc p{
+        font-size: 1rem;
+    }
+
+    .project_link a{
+        font-size: 1.5rem;
+    }
+
+    .project_content p{
+        font-size: 0.8rem;
+    }
+
+    .project {
+        width: 150px;
+        height: 150px;
+    }
+
+    .project_header {
+        font-size: 1rem;
+    }
+}

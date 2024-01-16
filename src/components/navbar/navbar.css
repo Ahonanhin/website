@@ -1,0 +1,90 @@
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-family: "Outfit", sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+  
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar_logo {
+    font-size: 1.5em;
+    padding-left: 0.8rem;
+  }
+  
+  .navbar_logo a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .navbar_links {
+    display: flex;
+    gap: 20px;
+    padding-right: 1.2rem;
+  }
+  
+  .navbar_links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-left: 1rem;
+  }
+  
+  .navbar_links a:hover {
+    color: #ddd;
+  }
+  
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .mobile-nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+  
+  .mobile-nav.open {
+    display: n;
+  }
+
+  .navbar_more{
+    display: none;
+  }
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .navbar_links {
+      display: none;
+    }
+
+    .navbar_more {
+      display: flex;
+    }
+
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      font-size: 3rem;
+    }
+  }
